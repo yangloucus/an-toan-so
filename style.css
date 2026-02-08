@@ -1,0 +1,369 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e8ddd3;
+    color: #4a3b31;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #7a5c43;
+    margin-bottom: 5px;
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #4a3b31;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.main-layout {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.content-box {
+    flex: 2;
+    background: white;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-tag {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.police-portal {
+    background: white;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.web-header {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.portal-card {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    min-height: 160px;
+    margin: 0;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #f2f2f2;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.portal-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: top;
+}
+
+.portal-banner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #d90429;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 12px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.portal-text {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(6px);
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.web-header:hover .portal-card {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+}
+
+.web-header:hover .portal-banner {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.web-header:hover .portal-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mps-logo {
+    display: block;
+    width: 65px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.ho-chi-minh-box {
+    background: #e63946;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.bac-ho-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.quote {
+    text-align: center;
+    font-style: italic;
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.8rem;
+    color: #7a5c43;
+}
+
+.status-bar {
+    background: rgba(255,255,255,0.5);
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.ho-chi-minh-box {
+    background: linear-gradient(145deg, #ff0000, #cc0000);
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+    width: 100%; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; 
+    gap: 15px; 
+    position: relative;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    margin-top: 0;
+}
+
+.ho-chi-minh-box::after {
+    content: "★";
+    position: absolute;
+    right: -10px;
+    top: 10px;
+    font-size: 150px;
+    color: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+}
+
+
+.hcm-row-1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bac-ho-container {
+    width: 60px;
+    height: 60px;
+    border: 3px solid #ffcc00; 
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0; 
+}
+
+.bac-ho-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hcm-title {
+    color: #ffcc00;
+    font-weight: 800;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+
+.hcm-quote {
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+
+.hcm-footer-banner {
+    background: rgba(0, 0, 0, 0.15); 
+    padding: 8px 12px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+}
+
+.genz-text {
+    opacity: 0.9;
+}
+.hinh1 {
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    border-radius: 15px;
+}
+.hinh1:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.hinh2 {
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    border-radius: 15px;
+}
+.hinh2:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.hinh3 {
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+.hinh3:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.hinh4 {
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    border-radius: 15px;
+}
+.hinh4:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.video1 {
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    border-radius: 20px;
+}
+.video1:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.TD{
+    position: relative;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 800;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 
+        inset 0 8px 32px 0 rgba(255, 255, 255, 0.2);
+    isolation: isolate;
+    transition: all 0.3s ease;
+    appearance: none;
+    outline: none;
+    overflow: hidden;
+}
+
+.TD::before {
+    content: '';
+    position: absolute;
+    background: (white);
+    filter: blur(20px);
+}
+
+.TD::after {
+    content: '';
+    position: absolute;
+    box-shadow: inset 0 2px 4px 0 rgba(184, 119, 22, 0.3);
+}
+
+.TD:hover {
+    color: rgb(110, 110, 110);
+    background: rgba(77, 50, 9, 0.3);
+    box-shadow: inset 0 2px 4px 0 rgba(70, 45, 9, 0.3);
+    transform: translateY(-10px)
+}
+
+.footer-email{
+    color: rgb(110, 110, 110);
+    text-decoration: none;
+    margin-right: 1rem;
+        
+}
